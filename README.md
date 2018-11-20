@@ -2,6 +2,7 @@
 
 ![Un ejemplo de que se puede hacer con Java2D](grid.png "Un ejemplo de que se puede hacer con Java2D")
 
+
 Una de las capacidades de las librerias de Java para la creación de interfaces
 graficas es el poder generar graficas directamente, ya sea en pantalla o en
 memoria para despues exportalas a un archivo de imagen, estas capacidades estan
@@ -21,5 +22,18 @@ Obviamente hay mucho mas de Graphics2D que solo dibujar lineas y figuras, como
 por ejemplo el método drawImage que dibuja imagenes ya existentes, pero eso sera
 para otra entrada.
 
-## Obteniendo el objeto Graphics2D
+## Dibujar graficas en pantalla
+La forma mas sencilla de dibujar graficas en la pantalla consiste en crear un
+nuevo componente de Swing en el cual crearemos la grafica deseada, esto es mucho
+mas sencillo de lo que suena, basta con crear una subclase de *JComponent* y
+redefinir el método *draw*, como se ve a continuación:
 
+```java
+public class GridTest extends JComponent {
+   @Override
+   public void paint(Graphics g){
+   }
+}
+```
+
+Esta clase se puede usar como cualquier otro componente Swing 

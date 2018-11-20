@@ -36,4 +36,4 @@ public class GridTest extends JComponent {
 }
 ```
 
-Esta clase se puede usar como cualquier otro componente Swing 
+Esta clase se puede usar como cualquier otro componente Swing

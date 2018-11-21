@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mx.com.pydee.grid;
+package mx.com.hashCode.grid;
 
 
 import javax.swing.*;
@@ -50,11 +50,23 @@ public class GridTest extends JComponent {
     }
     
     public static void main(String[] args) {
+        // Creamos una ventana para mostrar las graficas
         JFrame frame = new JFrame("Grid Test");
+        
+        // Nuestro nuevo componente con la grafica
+        GridTest grid = new GridTest();
+        
+        // Operacion de salida por defecto
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new GridTest());
+        
+        // Agregamos el componente con la grafica
+        frame.getContentPane().add(grid);
+        
+        // Especificamos dimensiones
         frame.pack();
         frame.setSize(new Dimension(900, 420));
+        
+        // Mostramos la ventana
         frame.setVisible(true);
     }
 }
